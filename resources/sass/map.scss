@@ -1,0 +1,148 @@
+.map {
+    height: 100vh;
+    width: 100%;
+
+    .hover__show {
+        display: none;
+    }
+
+    .left__map {
+        z-index: 1000;
+        background: white;
+        position: absolute;
+        left: -300px;
+        bottom: 0;
+        top: 0;
+        width: 300px;
+        min-height: 100vh;
+        transition: transform .3s ease-in-out;
+    }
+
+    .move_left {
+        transform: translateX(300px);
+    }
+
+    .left__map_hidden {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        background: transparent;
+        width: 330px;
+        height: 100vh;
+        &:hover .hover__show {
+            display: block;
+        }
+    }
+
+    .right__map_hidden {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: transparent;
+        width: 330px;
+        height: 100vh;
+        &:hover .hover__show {
+            display: block;
+        }
+    }
+
+    .right__map {
+        background: white;
+        position: absolute;
+        top: -120vh;
+        right: 0;
+        bottom: 0;
+        width: 300px;
+        height: 100vh;
+        transition: transform .3s ease-in-out;
+    }
+
+    .move_right {
+        transform: translateY(120vh);
+    }
+}
+
+
+.map_cols {
+    height: 600px;
+    max-height: 600px;
+    .map_col {
+        max-height: 600px;
+
+
+    }
+}
+
+.map_checkpoint {
+    .map_checkpoint_image {
+        height: 200px;
+
+    }
+
+    .avto {
+        margin-top: -100px;
+        height: 200px;
+    }
+
+    .progress__avto {
+        margin-top: -25px;
+    }
+}
+.second_column {
+    .avto_block {
+        .avto {
+            height: 200px;
+        }
+
+        .progress__avto {
+            margin-top: -25px;
+        }
+    }
+}
+
+
+.third_column {
+    .avto_block {
+        .avto {
+            height: 200px;
+        }
+
+        .progress__avto {
+            margin-top: -25px;
+        }
+    }
+}
+
+
+.four_column {
+
+    .crane_block {
+        max-width: 100%;
+        .crane_image {
+            height: 200px;
+        }
+        .person_image {
+            margin-right: -20%;
+            height: 100px;
+        }
+        .avto_block_wait {
+            min-width: 130px;
+            max-width: 140px;
+            .avto {
+                height: 100px;
+            }
+        }
+
+        .avto_block {
+            .avto {
+                height: 100px;
+            }
+
+            margin: 0;
+        }
+    }
+}
+
+

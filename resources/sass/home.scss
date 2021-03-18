@@ -1,0 +1,86 @@
+h1, h2, h3, h4, h5, h6, p, a,label, input, button {
+    font-family: Roboto;
+}
+
+main {
+    min-height: calc(100vh - 355px - 3rem);
+    box-sizing: content-box;
+
+}
+
+footer.footer {
+    margin: 0;
+    padding: 0;
+    background-image:url('../../storage/app/public/home/slide2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#home {
+    .slide1 {
+        margin: -1.5rem 0 0 0;
+        padding: 0;
+        background-image:url('../../storage/app/public/home/slide1.jpg');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        height: 100vh;
+        width: calc(100%);
+        box-sizing: border-box;
+    }
+
+    .slide2 {
+        margin: 0;
+        padding: 0;
+        background-image:url('../../storage/app/public/home/slide3.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        width: calc(100%);
+        box-sizing: border-box;
+    }
+
+    .slide3 {
+        h2 {
+            font-size: 50pt;
+            margin-bottom: 30px;
+            color: #BF2D20;
+            font-weight: bold;
+        }
+        h4, p {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            color: #BF2D20;
+        }
+
+        img {
+            height: 200px;
+            width: 200px;
+
+            transition: transform linear .3s, box-shadow linear .3s;
+
+            &:hover {
+                transform: scale(1.2);
+                box-shadow: 0 0 15px black;
+            }
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 -1.5rem 0;
+        padding: 0;
+        background: linear-gradient(to top left, #ffde0f, #ffde0f);
+        background-size: cover;
+        min-height: 100vh;
+        width: calc(100%);
+        box-sizing: border-box;
+    }
+}
